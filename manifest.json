@@ -1,5 +1,13 @@
 {
   "manifest_version": 2,
   "name": "UoM Podcast Pause Screen",
-  "version": "0.1"
+  "description": "Removes the large play button in the middle of the screen when pausing a podcast obstructing you from taking screenshots or viewing the paused frame.",
+  "version": "0.1",
+  "content_scripts": [
+    {
+      "matches": ["https://video.manchester.ac.uk/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
 }
