@@ -5,6 +5,7 @@ function pollDOM () {
   if (el !== null) {
       console.log("Found: ", el);
       el.parentElement.removeChild(el);
+      var el = "REMOVED";
     } else {
       setTimeout(pollDOM, 300); // try again in 300 milliseconds
       console.log("Not found element, retrying...");
