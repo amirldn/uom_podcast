@@ -1,6 +1,6 @@
 {
     "manifest_version": 2,
-    "name": "UoM Podcast Pause Screen",
+    "name": "UoM Podcast",
     "description": "Removes the play button in the middle of the screen when pausing a podcast so you can take screenshots or take notes with ease.",
     "version": "1.0.3",
     "icons": { "128": "./artwork/128.png" },
