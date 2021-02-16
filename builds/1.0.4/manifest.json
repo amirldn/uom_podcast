@@ -1,0 +1,13 @@
+{
+    "manifest_version": 2,
+    "name": "UoM Podcast: Play Button Remover",
+    "description": "Removes the play button on the podcast player when it's paused so you're able to take screenshots for notes with zero distractions.",
+    "version": "1.0.4",
+    "icons": { "128": "./artwork/128.png" },
+    "content_scripts": [{
+        "matches": ["https://video.manchester.ac.uk/*", "https://online.manchester.ac.uk/webapps/blackboard/content/*"],
+        "js": ["content.js"],
+        "all_frames": true,
+        "run_at": "document_idle"
+    }]
+}
